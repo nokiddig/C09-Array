@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  let a = [12, 6, 7, 13, 5, 9, 23, 17, 16]
+  let caiGiDay = []
+  for (let i = 0; i < a.length; i++) {
+    //kiem tra a[i] co la so nguyen to k?
+    for (let j=2; j<a[i]; j++) {
+      if (a[i]%j == 0) {
+        break;
+      }
+      if (j == a[i]-1) {
+        caiGiDay.push(a[i])
+      }
+    }
+  }
+  alert(caiGiDay + "la cac so nguyen to")
+</script>
+</html>

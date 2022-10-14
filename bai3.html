@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  let a = [12, 6, 7, 13, 5, 9, 16]
+  let index = prompt("nhap vi tri can xoa")
+  let b = []
+  for (let i=0; i<a.length; i++) {
+      // if (i == index){
+      //     continue
+      // }
+      // b.push(a[i])
+      if (i!= index) {
+          b.push(a[i])
+      }
+  }
+  a = b
+  alert(a)
+</script>
+</html>
